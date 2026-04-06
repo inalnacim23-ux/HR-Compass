@@ -1,0 +1,79 @@
+[
+  {
+    "id": "3c50230a-9807-49d7-a7be-b5febd594381",
+    "filename": "Gestiondesressourceshumaines.pdf",
+    "label": "Gestiondesressourceshumaines.pdf",
+    "extension": "pdf",
+    "sizeBytes": 4380153,
+    "pageCount": 328,
+    "chunkCount": 265,
+    "uploadedAt": "2026-03-28T16:34:24.106Z",
+    "language": "mixed"
+  },
+  {
+    "id": "3889b0dc-41db-416b-b37a-376421c537bc",
+    "filename": "guide_ressources_releve_final.pdf",
+    "label": "guide_ressources_releve_final.pdf",
+    "extension": "pdf",
+    "sizeBytes": 2562830,
+    "pageCount": 16,
+    "chunkCount": 10,
+    "uploadedAt": "2026-03-28T16:34:48.432Z",
+    "language": "mixed"
+  },
+  {
+    "id": "3271c0b2-1266-4628-a978-618c51e0f686",
+    "filename": "fidelisation-attraction_outilsRH_csmoesac.pdf",
+    "label": "fidelisation-attraction_outilsRH_csmoesac.pdf",
+    "extension": "pdf",
+    "sizeBytes": 123617,
+    "pageCount": 2,
+    "chunkCount": 2,
+    "uploadedAt": "2026-03-28T16:35:06.146Z",
+    "language": "mixed"
+  },
+  {
+    "id": "86500cb5-1a44-4946-9186-6cc6b868a32a",
+    "filename": "CSMOesac_lesreperes_2018.pdf",
+    "label": "CSMOesac_lesreperes_2018.pdf",
+    "extension": "pdf",
+    "sizeBytes": 6127498,
+    "pageCount": 146,
+    "chunkCount": 131,
+    "uploadedAt": "2026-03-28T16:35:36.798Z",
+    "language": "mixed"
+  },
+  {
+    "id": "723599f4-8dde-47ee-a7f6-10246054fb1e",
+    "filename": "accueillir-un-stagiaire-outilsRH_csmoesac.pdf",
+    "label": "Data-GRH",
+    "extension": "pdf",
+    "sizeBytes": 147346,
+    "pageCount": 3,
+    "chunkCount": 3,
+    "uploadedAt": "2026-03-28T16:36:51.269Z",
+    "language": "mixed"
+  },
+  {
+    "id": "44bf0256-05d4-43fd-92bc-8ba2bbfc53e5",
+    "filename": "My HR Data base.pdf",
+    "label": "My HR Data base.pdf",
+    "extension": "pdf",
+    "sizeBytes": 13491170,
+    "pageCount": 1329,
+    "chunkCount": 1070,
+    "uploadedAt": "2026-03-28T20:54:28.346Z",
+    "language": "mixed"
+  },
+  {
+    "id": "3f9e917d-bef4-4672-988c-fc3a287a0a12",
+    "filename": "Boite a outils.pdf",
+    "label": "Boite a outils.pdf",
+    "extension": "pdf",
+    "sizeBytes": 3930601,
+    "pageCount": 365,
+    "chunkCount": 284,
+    "uploadedAt": "2026-03-29T12:31:30.249Z",
+    "language": "mixed"
+  }
+]
