@@ -4,10 +4,15 @@ import { getRelevantChunks } from '@/lib/ai/contextRetriever';
 import { buildPrompt } from '@/lib/ai/promptBuilder';
 
 export async function POST(request: NextRequest) {
-  const { answers, language } = await request.json();
+  const { answers, language, accessCode } = await request.json();
 
   if (!answers || !language) {
     return new Response(JSON.stringify({ error: 'Missing answers or language' }), { status: 400 });
+  }
+
+  const validCode = process.env.PREMIUM_ACCESS_CODE;
+  if (!validCode || accessCode !== validCode) {
+    return new Response(JSON.stringify({ error: 'Invalid access code' }), { status: 401 });
   }
 
   const chunks = await getRelevantChunks(answers);

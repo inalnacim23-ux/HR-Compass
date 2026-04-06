@@ -62,7 +62,7 @@ export function useStreamingReport(sessionId: string | null) {
         const res = await fetch('/api/diagnostic', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ answers: payload.answers, language: payload.language }),
+          body: JSON.stringify({ answers: payload.answers, language: payload.language, accessCode: payload.accessCode }),
         });
 
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
