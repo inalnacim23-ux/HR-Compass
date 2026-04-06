@@ -627,9 +627,15 @@ export function generateDemoReport(
   });
 
   report += '\n';
+  const toolkitUrl = 'https://drive.google.com/file/d/1TlUQ59UiVwSAnER7jWK_LsFvaPuhF7Ig/view?usp=sharing';
+
   report += isFr
-    ? `> 💡 *Ce diagnostic démo est généré à partir de la Boîte à outils RH OBNL. Pour un diagnostic complet ancré dans la littérature scientifique et personnalisé par l'IA, accédez à la version Premium.*\n`
-    : `> 💡 *This demo diagnostic is generated from the NPO HR Toolkit. For a complete AI-powered diagnostic grounded in scientific literature, access the Premium version.*\n`;
+    ? `> 💡 *Ce diagnostic démo est généré à partir de la Boîte à outils RH OBNL. Consultez la boîte à outils complète pour suivre les étapes recommandées : [📥 Télécharger la Boîte à outils RH OBNL](${toolkitUrl})*\n\n`
+    : `> 💡 *This demo diagnostic is generated from the NPO HR Toolkit. Access the full toolkit to follow the recommended steps: [📥 Download the NPO HR Toolkit](${toolkitUrl})*\n\n`;
+
+  report += isFr
+    ? `> 🚀 *Pour un diagnostic complet ancré dans la littérature scientifique et personnalisé par l'IA, accédez à la version Premium.*\n`
+    : `> 🚀 *For a complete AI-powered diagnostic grounded in scientific literature, access the Premium version.*\n`;
 
   return report;
 }

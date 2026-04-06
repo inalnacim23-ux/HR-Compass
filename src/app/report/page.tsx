@@ -23,19 +23,32 @@ function DemoBanner({ lang }: { lang: 'fr' | 'en' }) {
         </div>
         <p className="text-sm text-amber-800">
           {lang === 'fr'
-            ? 'Ce rapport est généré gratuitement à partir de la Boîte à outils RH OBNL. La version Premium offre un diagnostic complet, ancré dans la recherche scientifique et personnalisé par l\'IA.'
-            : 'This report is generated for free from the NPO HR Toolkit. The Premium version offers a complete diagnostic grounded in scientific research and personalized by AI.'}
+            ? 'Ce rapport est généré gratuitement à partir de la Boîte à outils RH OBNL. Consultez la boîte à outils pour suivre les étapes recommandées.'
+            : 'This report is generated for free from the NPO HR Toolkit. Access the toolkit to follow the recommended steps.'}
         </p>
       </div>
-      <button
-        onClick={() => router.push('/diagnostic')}
-        className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg hover:from-blue-500 hover:to-indigo-500 transition-all shadow-sm"
-      >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-        {lang === 'fr' ? 'Obtenir la version complète' : 'Get the full version'}
-      </button>
+      <div className="flex flex-col gap-2">
+        <a
+          href="https://drive.google.com/file/d/1TlUQ59UiVwSAnER7jWK_LsFvaPuhF7Ig/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-amber-800 bg-amber-100 border border-amber-300 rounded-lg hover:bg-amber-200 transition-all"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          {lang === 'fr' ? 'Accéder à la Boîte à outils' : 'Access the Toolkit'}
+        </a>
+        <button
+          onClick={() => router.push('/diagnostic')}
+          className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg hover:from-blue-500 hover:to-indigo-500 transition-all shadow-sm"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          {lang === 'fr' ? 'Obtenir la version complète' : 'Get the full version'}
+        </button>
+      </div>
     </div>
   );
 }
